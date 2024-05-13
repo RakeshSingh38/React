@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.styledClass {
+    color: green;
+    background-color: cyan;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.newStyle {
+    color: red;
+    background-color: yellow;
+    font-size: 40px;
+
+}

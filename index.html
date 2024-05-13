@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fix     i accidentally wrote class instead of id -->
+    <div id="root"></div>
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = 'Hello World';
+
+        const root = document.getElementById('root');
+        root.appendChild(heading)
+        // above code means that we are creating a h1 element and then we are adding the text Hello World to it and then we are adding it to the root div
+        //  in simple terms we are adding the h1 element to the root div
+        
+ 
+    </script>
+</body>
+
+</html>
