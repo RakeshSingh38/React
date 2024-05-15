@@ -11,7 +11,9 @@ function List() {
                 {/* {items.map((item) => (
                     <li key={item.id}>{item.name}</li>
                 ))} */}
-                {items.map((item, index) => (
+                {/* tip     closing tags looks like this in JSX  <br /> <img />*/}
+                <br />
+                {items.map((item) => (
                     <li key={item.id}>{item.name}</li>
                     // <li key={index}>{item.name}</li>
                 ))}

@@ -3,6 +3,7 @@
 // import Expressions from './Components/Expressions'
 import List from './Components/List'
 import Styling from './Components/Styling'
+import UserInfo from './Components/UserInfo'
 function App() {
   // for auto rename extension its javascriptreact put it in settings.json file at the end u will find it
   // to find the language name in the footer of vs code editor click on it and select the language mode and find the language name
@@ -17,6 +18,7 @@ function App() {
       {/* <Expressions/> */}
       <Styling />
       <List />
+      <UserInfo />
     </ >
   )
 }
