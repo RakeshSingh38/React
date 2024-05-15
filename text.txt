@@ -1,0 +1,21 @@
+// if u are facing error such as
+'component' is missing props validation
+then 
+at the top of the code add
+/* eslint-disable react/prop-types */
+
+or
+
+import PropTypes from 'prop-types';
+
+// here Product is a functional component ( change it your component name)
+Product.propTypes = {
+  product: PropTypes.object.isRequired
+};
+
+// add it before export default ....
+
+// tip      this will remove the error -> Delete the .eslintrc.cjs file from the root
+Delete the .eslintrc.cjs file from the root directory of the project
+
+

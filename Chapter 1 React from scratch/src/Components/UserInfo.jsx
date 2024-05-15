@@ -23,7 +23,7 @@ function UserInfo() {
                     <li>{user.username}</li>
                     <li>{user.email}</li>
                     <li>{user.loaction}</li>
-                    <hr style={{border: '1px solid green'}}/>
+                    <hr style={{ border: '1px solid green' }} />
                 </ul>
             ))}
         </>

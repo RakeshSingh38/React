@@ -4,6 +4,7 @@
 import List from './Components/List'
 import Styling from './Components/Styling'
 import UserInfo from './Components/UserInfo'
+import Properties from './Components/Properties'
 function App() {
   // for auto rename extension its javascriptreact put it in settings.json file at the end u will find it
   // to find the language name in the footer of vs code editor click on it and select the language mode and find the language name
@@ -15,10 +16,12 @@ function App() {
       {/* <Add/>
       <Greetings/> */}
       {/* imp     for now i will comment this */}
-      {/* <Expressions/> */}
+      {/* <Expressions /> */}
       <Styling />
       <List />
+      <Properties user={'Rakesh Prop'} />
       <UserInfo />
+      <Properties user={'Nikesh Prop'} style={{ color: 'green' }} />
     </ >
   )
 }

@@ -19,6 +19,16 @@
 					"label": "//imp   Closing tags in React js "
 				}
 			]
+		},
+		{
+			"path": "text.txt",
+			"bookmarks": [
+				{
+					"line": 17,
+					"column": 12,
+					"label": "'component' is missing props validation error fixed"
+				}
+			]
 		}
 	]
 }
