@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .skill-list {
     list-style: none;
     display: flex;
@@ -11,3 +10,11 @@
     margin-top: 16px;
 }
 
+@layer components {
+    .skill {
+        padding: 8px 16px;
+        font-size: 2rem;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+    }
+}

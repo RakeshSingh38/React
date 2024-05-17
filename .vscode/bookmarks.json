@@ -29,6 +29,26 @@
 					"label": "'component' is missing props validation error fixed"
 				}
 			]
+		},
+		{
+			"path": "Chapter 2 Props and states/src/Children.jsx",
+			"bookmarks": [
+				{
+					"line": 11,
+					"column": 29,
+					"label": "ml-auto or mr-auto to shift a content to lefft or right in flexbox"
+				}
+			]
+		},
+		{
+			"path": "Chapter 3 Practise/src/Youtube.jsx",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 16,
+					"label": "recursive  loop related to crash"
+				}
+			]
 		}
 	]
 }

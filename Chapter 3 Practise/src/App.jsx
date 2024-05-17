@@ -3,8 +3,8 @@
 // import Children from './Children'
 // import User from './User'
 import ConditionalRendering from './ConditionalRendering'
-// import Mailbox from './Mailbox'
-import YTbox from './YTbox'
+import Mailbox from './Mailbox'
+import Youtube from './Youtube'
 function App() {
 
   return (
@@ -13,9 +13,12 @@ function App() {
       {/* <Properties /> */}
       {/* <Children /> */}
       {/* make sure u dont repeat it */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
       {/* <Mailbox /> */}
-      <YTbox />
+      <div className="bg-[#333] flex flex-col gap-y-8">
+      <Youtube />
+      
+      </div>
     </>
   )
 }
