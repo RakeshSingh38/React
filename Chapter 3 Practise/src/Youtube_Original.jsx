@@ -7,7 +7,7 @@ const Video = () => {
         views: "10M",
         timestamp: "10 days ago",
         image: "https://i.ytimg.com/vi/7C2z4GqqS5E/hqdefault.jpg",
-        verified: true,
+        verified:true,
     }
 
     return (
@@ -47,16 +47,13 @@ const Video = () => {
 
 const Youtube = ({ channel, title, views, timestamp: time, image, verified }) => {
     let ChannelVerified;
-    verified ? ChannelVerified = <h1>{channel} ✅</h1> : ChannelVerified = <h1>{channel}</h1>;
+    verified? ChannelVerified = <h1>{channel} ✅</h1>: ChannelVerified = <h1>{channel}</h1>;
     return (
-        <div className="m-2"> 
+        <div className="m-2">
             <img className="w-[15em]" src={image} alt={title} />
             <h1 className="text-xl font-bold mb-2">{title}</h1>
             <div className="text-[#c5c0c0] font-normal text-[13px]">
-                {/* {verified ? <h1>{channel} ✅</h1> : null} */}
-                {/* {verified ? <h1>{channel} ✅</h1> : <h1>{channel}</h1>} */}
-                <h1>{channel} {verified && '✅'}</h1>
-
+            {ChannelVerified}
                 <div className="flex gap-4">
                     <p >{views} views</p>
                     <p >{time}</p>

@@ -39,16 +39,6 @@
 					"label": "ml-auto or mr-auto to shift a content to lefft or right in flexbox"
 				}
 			]
-		},
-		{
-			"path": "Chapter 3 Practise/src/Youtube.jsx",
-			"bookmarks": [
-				{
-					"line": 3,
-					"column": 16,
-					"label": "recursive  loop related to crash"
-				}
-			]
 		}
 	]
 }

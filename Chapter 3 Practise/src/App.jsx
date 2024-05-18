@@ -5,6 +5,8 @@
 import ConditionalRendering from './ConditionalRendering'
 import Mailbox from './Mailbox'
 import Youtube from './Youtube'
+import ResumeBuilder from './ResumeBuilder'
+import Youtube_Non_Repeating_Comp from './Youtube_Non_Repeating_Comp'
 function App() {
 
   return (
@@ -15,9 +17,10 @@ function App() {
       {/* make sure u dont repeat it */}
       {/* <ConditionalRendering /> */}
       {/* <Mailbox /> */}
-      <div className="bg-[#333] flex flex-col gap-y-8">
-      <Youtube />
-      
+      <div className='App'>
+      {/* <Youtube /> */}
+      <Youtube_Non_Repeating_Comp />
+      {/* <ResumeBuilder/> */}
       </div>
     </>
   )
