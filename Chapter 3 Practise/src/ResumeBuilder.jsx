@@ -1,13 +1,13 @@
 const Resume_info = () => {
     let resume = {
-        name:"Rakesh Singh",
+        name: "Rakesh Singh",
         experience: [{ year: 2012, company: 'xyz', role: 'something' }],
         education: [{
             title: "Bachelor of Science",
             school: "University of Texas",
             location: "Austin, TX",
         }],
-        skills: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'Express', 'MongoDB',"Next Js"],
+        skills: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'Express', 'MongoDB', "Next Js"],
         Education: [{
             title: "Bachelor of Science",
             school: "University of Texas",
@@ -25,11 +25,12 @@ const Resume_info = () => {
     }
     return (
         <div className="p-10">
-            <h1 className="text-5xl p-2">{ resume.name} </h1>
+            <h1 className="text-5xl p-2">{resume.name} </h1>
             <h1 className="text-3xl mb-2 bg-cyan-200">
                 Experiences
             </h1>
             <div className="flex flex-wrap">
+                {/* imp     experience  */}
                 {resume.experience.map((res, index) => (
                     <ul key={index} className="list-disc ml-7 w-1/3">
                         <li>{res.year}</li>
@@ -40,6 +41,7 @@ const Resume_info = () => {
             </div>
             <h1 className="text-4xl bg-orange-300 my-4">Education</h1>
             <div className="flex flex-wrap">
+                {/* imp     education */}
                 {resume.education.map(({ title, school, location }, index) => {
                     return (
                         <ul key={index} className="list-disc ml-7 w-1/3">
@@ -52,6 +54,7 @@ const Resume_info = () => {
             </div>
             <h1 className="text-4xl bg-green-300 my-4">Skills</h1>
             <div className="flex flex-wrap">
+                {/* imp      Skills */}
                 {resume.skills.map((skill, index) => {
                     return (
                         <ul key={index} className="list-disc ml-7 w-1/4">

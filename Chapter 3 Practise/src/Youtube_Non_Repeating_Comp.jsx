@@ -41,7 +41,7 @@ const Video = () => {
         <div className=" text-white flex gap-px">
 
             {/* imp         in case the 1st value is not accessible through spread operator use ...obj[0] , here obj is taken as a reference*/}
-            {/* <Youtube {...obj[0]} /> */}
+            <Youtube {...obj[0]} />
 
             {
                 // imp       to skip first array of object then use slice
@@ -50,7 +50,7 @@ const Video = () => {
                 // tip       make sure to use key value as a unique identifier becoz it helps React to help React identify which items have changed, been added, or been removed.
                 obj.slice(1).map((vid) =>
                     <Youtube
-                    key={vid.id}
+                        key={vid.id}
                         id={vid.id}
                         channel={vid.channel}
                         title={vid.title}
@@ -60,6 +60,20 @@ const Video = () => {
                         verified={vid.verified}
                     />
                 )}
+            {
+                obj.slice(1).map(({ id, channel, title, views, timestamp: time, verified }) => (
+                    <Youtube
+                        key={id}
+                        id={id}
+                        channel={channel}
+                        title={title}
+                        views={views}
+                        // r     this timestamp will be same to write as we can only change it in while writing the function props i.e function Component({timestamp:time})
+                        timestamp={time}
+                        verified={verified}
+                    />
+                ))}
+
             {/* {
                 obj.map(vid =>
                     <Youtube
