@@ -4,14 +4,12 @@ const Events = () => {
     const obj = [{
         id: 1,
         name: "Rakesh",
-        skills: "React JS",
         age: 20,
         gender: "Male",
     },
     {
         id: 2,
         name: "Ramesh",
-        skills: "Node JS",
         age: 25,
         gender: "Male",
     }];
@@ -25,11 +23,10 @@ const Events = () => {
                         key={events.id}
                         id={events.id}
                         name={events.name}
-                        skills={events.skills}
                         age={events.age}
                         gender={events.gender}
                     >
-                        <Button onPlay={() => console.log("Play",events.skills)} onPause={() => console.log("Pause",events.skills)}>{events.skills}</Button>
+                        <Button onPlay={() => console.log("Play")} onPause={() => console.log("Pause")} />
                     </Final>
 
                 )
@@ -51,13 +48,12 @@ const Events = () => {
     );
 };
 
-const Final = ({ id, name, age, gender, skills, children }) => {
+const Final = ({ id, name, age, gender, children }) => {
     return (
         <div className="capitalize flex flex-col flex-wrap">
             <h1 className="mt-3 text-4xl mb-2">Details</h1>
             <h1 className="text-lg">id is {id}</h1>
             <h1 className="text-lg">name is {name}</h1>
-            <h1 className="text-lg">skills is {skills }</h1>
             <h1 className="text-lg">age is {age}</h1>
             <h1 className="text-lg mb-2">Gender is {gender}</h1>
             {/* <br />    this break line giving new line and  i thought i leave a margin by mistake somewhere */}

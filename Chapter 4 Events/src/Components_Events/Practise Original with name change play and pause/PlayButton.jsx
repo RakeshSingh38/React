@@ -42,8 +42,9 @@ const Button = ({ children, onPlay, onPause }) => {
         // or
         setPlaying((!playing));
     };   // r    Recommended way
+    const buttonText = playing ? "Pause" : "Play";
     return <button onClick={handleClick}
-    /*  onDoubleClick={handleDoubleClick} */ className={style}> {children} {playing ? ">" : "||"}
+    /*  onDoubleClick={handleDoubleClick} */ className={style}> {children ? `${buttonText} ${children}` : `${buttonText}`} {playing ? ">" : "||"}
     </button >
 
 }
