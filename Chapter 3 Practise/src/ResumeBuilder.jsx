@@ -1,3 +1,6 @@
+// Assignment 4 how to print the resume using window.print() method
+const print = () => window.print();
+
 const Resume_info = () => {
     let resume = {
         name: "Rakesh Singh",
@@ -22,9 +25,10 @@ const Resume_info = () => {
         //     title: "Google Developer Group",
         //     location: "Mountain View, CA",
         // },
+
     }
     return (
-        <div className="p-10">
+        <div className="p-10 h-screen bg-white">
             <h1 className="text-5xl p-2">{resume.name} </h1>
             <h1 className="text-3xl mb-2 bg-cyan-200">
                 Experiences
@@ -62,6 +66,9 @@ const Resume_info = () => {
                         </ul>
                     )
                 })}
+                <div className="flex place-content-center w-full">
+                    <button className="border border-gray-500 px-4 py-2 grid place-content-center text-center shadow-lg rounded-md" onClick={print} >Print</button>
+                </div>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Assignment 1 Make a simple page with 1 Image, 1button, 1 form Input text box and try to apply these events on them use onMouseOver , onMouseOut, onClick, onKeyPress, onBlur, onFocus and onDoubleClick
 const handleMouseOver = (e) => {
     // imp      target refers to the element that triggered the event. In this case, it represents the element that the event listener is attached to.
     e.target.style.transition = 'transform .2s';

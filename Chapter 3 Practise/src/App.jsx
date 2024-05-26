@@ -19,8 +19,8 @@ function App() {
       {/* <Mailbox /> */}
       <div className='App'>
       {/* <Youtube /> */}
-      <Youtube_Non_Repeating_Comp />
-      {/* <ResumeBuilder/> */}
+      {/* <Youtube_Non_Repeating_Comp /> */}
+      <ResumeBuilder/>
       </div>
     </>
   )
