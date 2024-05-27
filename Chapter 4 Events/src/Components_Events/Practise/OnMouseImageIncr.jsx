@@ -1,4 +1,3 @@
-import React from 'react'
 
 // Assignment 1 Make a simple page with 1 Image, 1button, 1 form Input text box and try to apply these events on them use onMouseOver , onMouseOut, onClick, onKeyPress, onBlur, onFocus and onDoubleClick
 const handleMouseOver = (e) => {
@@ -42,7 +41,7 @@ const OnMouseImageIncr = () => {
             <form action="get" className='grid place-items-center'
                 //  its Enter not enter
                 onKeyDown={onPress}
-                onClick={onBox}
+                // onClick={onBox}
             >
                 <input className='text-black w-[50%] h-10 ps-3' type="text" name="name" id="name" />
                 <button type="submit"

@@ -32,18 +32,34 @@ const Button = ({ children, onPlay, onPause }) => {
     //     console.log("Double click");
     //     alert("Double click detected!");
     // };
-    // const handleClick = () =>  console.log("Single Click");;   // r    Recommended way
-    // const onDoubleClick = () =>  console.log("Double Clicked"); alert("double clicked");   // r    Recommended way
+    const onSingleClick = () => console.log("Single Click");;   // r    Recommended way
+
+    // fix     if i declared 2 statements in a function then the last one will be executed
+    //        without using { } curly braces it will execute only the last statement
+    // i.e alert one   so only declare a single statement in a function without using { } curly braces
+    const handleDoubleClick = () => {
+        console.log("Double Clicked");
+        alert("double clicked");   // r    Recommended way
+    }
     const [playing, setPlaying] = useState(false);
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.stopPropagation();
         if (playing) onPause();
         else onPlay();
         // setPlaying((prevPlaying) => !prevPlaying);
         // or
         setPlaying((!playing));
     };   // r    Recommended way
-    return <button onClick={handleClick}
-    /*  onDoubleClick={handleDoubleClick} */ className={style}> {children} {playing ? ">" : "||"}
+
+
+    const onClose = (e) => {
+        console.log("Browser closed");
+        window.close();
+    }
+    return <button /* onClick={handleClick} */
+        /* onDoubleClick={handleDoubleClick} */
+        onClick={onClose}
+        className={style}> {children} {playing ? ">" : "||"}
     </button >
 
 }

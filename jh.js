@@ -1,1 +1,3 @@
-console.log('Hello from jh.js');
+const text = "Hello  world    my         name is            Galaxy";
+
+console.log(text.split(" ").join(" "));
