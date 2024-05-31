@@ -1,18 +1,18 @@
-import React from 'react';
 
 export default function Timer({ time }) {
-    // Add missing import statement
-
-    let hours = getHours(time);
-    let day;
+    let hours = time.getHours();
+    let className;
     if (hours >= 0 && hours <= 6) {
-        day = 'night';
+        className = 'night';
     } else {
-        day = 'day';
+        className = 'day';
     }
     return (
-        <h1 className={day}>
+        // <h1 className=`${className} text-green-500`>
+        <div className="static">
+        <h1 className={`${className} text-6xl text-center absolute inset-x-0 `}>
             {time.toLocaleTimeString()}
         </h1>
+        </div>
     );
 }

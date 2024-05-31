@@ -1,13 +1,14 @@
 import viteLogo from '/vite.svg'
 import '../src/index.css'
 import Counter from '../src/Components/Counter'
-import Timer from '../src/Components/Timer'
+import Clock from '../src/Components/TestApp'
 function App() {
 
   return (
     <>
-    {/* <Timer/> */}
+    {/* <Clock/> */}
     <Counter/>
+    {/* <Timer/> */}
     </>
   )
 }
