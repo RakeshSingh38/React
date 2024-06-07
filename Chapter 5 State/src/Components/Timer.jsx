@@ -10,7 +10,7 @@ export default function Timer({ time }) {
     return (
         // <h1 className=`${className} text-green-500`>
         <div className="static">
-        <h1 className={`${className} text-6xl text-center absolute inset-x-0 `}>
+        <h1 className={`${className} text-6xl text-center absolute inset-10 `}>
             {time.toLocaleTimeString()}
         </h1>
         </div>

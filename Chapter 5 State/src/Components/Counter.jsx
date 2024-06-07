@@ -17,7 +17,7 @@ const Counter = () => {
         console.log(++number);
     }
     const handleClick2 = () => {
-        if(number>0){
+        if (number > 0) {
             setNumber(number - 1)
             console.log(--number);
         }
@@ -31,9 +31,9 @@ const Counter = () => {
             console.log(number);
         } */
     return (
-        <div className='w-screen h-screen flex justify-center items-center text-center flex-col'>
+        <div className='w-screen h-screen  flex justify-center items-center text-center flex-col'>
             <h1 className='text-7xl'>Counter</h1>
-            <h1 className='text-7xl'>{number>=0?number:""}</h1>
+            <h1 className='text-7xl'>{number >= 0 ? number : ""}</h1>
             <div className='text-center mt-5 flex text-7xl place-content-center gap-5'>
                 <button onClick={handleClick} className='border border-gray-500 px-7 py-3 bg-black text-white rounded-lg'>+</button>
                 <button onClick={handleClick2} className='border border-gray-500 px-10 py-3 bg-black text-white rounded-lg'>-</button>
