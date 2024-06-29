@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+
 const useState2 = () => {
 
     const [state, setState] = useState("");
@@ -11,8 +12,7 @@ const useState2 = () => {
         <>
             <h1 className='text-5xl'>useState</h1>
 
-            <form onSubmit={(e) => {
-            }} className="flex justify-center items-center flex-col p-5 gap-y-3" >
+            <form className="flex justify-center   items-center flex-col p-5 gap-y-3" >
                 <div>
 
                     <label htmlFor="name" className="text-sm m-4 font-medium cursor-pointer">
@@ -36,6 +36,14 @@ const useState2 = () => {
             {/* <h1 className='text-5xl m-9'>{state}</h1> */}
             {/* <h1 className='text-5xl m-9'>{["Your data is : ",...state]}</h1> */}
             {/* <h1 className='text-5xl m-9'>Your data is : {state}</h1> */}
+
+            <div className='even:bg-green-500'>
+                <h1>1111</h1>
+                <b>faf</b>
+                <h1>1111</h1>
+                <h1>1111</h1>
+            </div>
+
         </>
 
     )
