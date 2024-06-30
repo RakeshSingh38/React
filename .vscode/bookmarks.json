@@ -39,6 +39,16 @@
 					"label": "ml-auto or mr-auto to shift a content to lefft or right in flexbox"
 				}
 			]
+		},
+		{
+			"path": "Practise/Practise/src/components/Six_Excuse_generator.jsx",
+			"bookmarks": [
+				{
+					"line": 35,
+					"column": 11,
+					"label": "individual excuses for family, office, funny"
+				}
+			]
 		}
 	]
 }

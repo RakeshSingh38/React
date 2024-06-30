@@ -14,7 +14,6 @@ function cloneWithFunctions(obj) {
         Object.getOwnPropertyDescriptors(obj)
     );
 }
-
 let clonePassionateCoder = cloneWithFunctions(passionateCoders);
 
 console.log(clonePassionateCoder);
