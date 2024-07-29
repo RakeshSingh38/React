@@ -49,6 +49,16 @@
 					"label": "individual excuses for family, office, funny"
 				}
 			]
+		},
+		{
+			"path": "Chapter 6.1 Browser DOM/src/Components/React_Stepper.jsx",
+			"bookmarks": [
+				{
+					"line": 44,
+					"column": 109,
+					"label": ".length property can be used to limit the number of iterations"
+				}
+			]
 		}
 	]
 }
