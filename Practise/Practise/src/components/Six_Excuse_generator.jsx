@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 const Six_Excuse_generator = () => {
     const [excuses, setExcuses] = useState('');
     const fetchedData = (ex) => {
+        // imp      excuses else api for excuses and jokes
         Axios.get(`https://excuser-three.vercel.app/v1/excuse/${ex}/`)
             .then((res) => {
                 // console.log(Object.values(res.data[0].excuse).join(""));

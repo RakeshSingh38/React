@@ -49,9 +49,8 @@ const Seven_doing_excuse_with_input = () => {
             {/* imp         4 > once all steps are finished then i will call the fetchedData function on button */}
             <button onClick={() => fetchedData()} className='border bg-blue-400 p-4 rounded-md mt-6'>Generate userInput</button>
 
-
             {/* imp         here it  should be userInput coz fetchedExcuse consist  of user Input */}
-            <h1>{userInput} </h1>
+            <h1 className="text-xl pt-4">{userInput} </h1>
 
             {/* imp         this is the input -→  <h1>{fetchedExcuse}</h1> eg: family */}
 
