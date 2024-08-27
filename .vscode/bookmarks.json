@@ -59,6 +59,16 @@
 					"label": ".length property can be used to limit the number of iterations"
 				}
 			]
+		},
+		{
+			"path": "Practise/Temp-project/src/temp.jsx",
+			"bookmarks": [
+				{
+					"line": 41,
+					"column": 68,
+					"label": "no use of applying filter method after map method"
+				}
+			]
 		}
 	]
 }
